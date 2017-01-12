@@ -12,14 +12,14 @@
     "Geitui": "http://www.igetui.com/"
   },
   "platforms": {
-    "ios": "6.0"
+    "ios": "7.0"
   },
   "source": {
     "git": "https://github.com/fmricky/Getui.git",
     "tag": "1.5.3"
   },
   "source_files": "GeTuiSdk.h",
-  "vendored_libraries": ["libGeTuiSdk-1.5.3.a","libGtExtensionSdk-1.0.0.a"],
+  "vendored_libraries": "libGeTuiSdk-1.5.3.a",
   "frameworks": [
     "SystemConfiguration",
     "CFNetwork",
@@ -30,13 +30,20 @@
     "CoreTelephony",
     "JavaScriptCore",
     "MobileCoreServices",
-    "AdSupport",
-    "UserNotifications"
+    "AdSupport"
   ],
   "libraries": [
     "z",
     "sqlite3",
     "c++"
   ],
-  "requires_arc": true
+  "requires_arc": true,
+  "subspec":{
+    "frameworks": ["UserNotifications"],
+    "source_files": "GeTuiExtSdk.h",
+    "vendored_libraries" : "libGtExtensionSdk-1.0.0.a",
+    "platforms": {
+    "ios": "10.0"
+  },
+  }
 }
