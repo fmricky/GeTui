@@ -1,4 +1,5 @@
 # GetuiSDK
+
 ========
 
 ## 个推SDK
@@ -7,15 +8,24 @@
 
 在 `Podfile` 文件下添加
 
-``` pod 'Getui' ```
+\``` pod 'Getui' ```
 
 欢迎大家提交Issuse或者PR来提醒更新  
 
 该版本使用了IDFA，请开发者提交审核时注意阅读文档。如果无需使用IDFA，请使用[Getui-NoIDFA](https://github.com/fmricky/Getui-NoIDFA)版本
 
-###Changelog
+### Changelog
 
-####1.5.0 (2016-09-01)
+#### 1.5.3（2016-11-15）
+
+- 支持 iOS10 新特性。
+- 添加 GtExtensionSdk，支持 APNs 通知的展示和点击统计。
+- 修改第三方库编译冲突。
+
+
+
+
+#### 1.5.0 (2016-09-01)
 
 - 全面支持苹果ATS安全标准。
 - 新增通知栏点击统计功能。
