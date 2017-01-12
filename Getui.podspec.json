@@ -39,11 +39,13 @@
   ],
   "requires_arc": true,
   "subspec":{
-    "frameworks": ["UserNotifications"],
-    "source_files": "GeTuiExtSdk.h",
-    "vendored_libraries" : "libGtExtensionSdk-1.0.0.a",
-    "platforms": {
-    "ios": "10.0"
-  },
+    "GetuiExtSdk":{
+      "frameworks": ["UserNotifications"],
+      "source_files": "GeTuiExtSdk.h",
+      "vendored_libraries" : "libGtExtensionSdk-1.0.0.a",
+      "platforms": {
+      "ios": "10.0"
+      }
+    }
   }
 }
